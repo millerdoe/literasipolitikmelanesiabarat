@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Halaman Info</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f5f7fb;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --accent:#0f6cff;
+      --radius:14px;
+      --glass: rgba(255,255,255,0.6);
+    }
+    *{box-sizing:border-box}
+    body{
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      margin:0; background:linear-gradient(180deg,var(--bg),#eef3ff); color:#0f172a;
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+      padding:32px;
+    }
+
+    .container{max-width:980px;margin:0 auto}
+
+    header{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+    .logo{
+      width:68px;height:68px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#6a9bff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px;box-shadow:0 6px 18px rgba(15,108,255,0.18)
+    }
+    h1{font-size:20px;margin:0}
+    p.lead{margin:4px 0 0;color:var(--muted)}
+
+    .grid{display:grid;grid-template-columns:1fr 340px;gap:20px}
+
+    /* Main card */
+    .card{background:var(--card);border-radius:var(--radius);padding:20px;box-shadow:0 8px 30px rgba(16,24,40,0.06)}
+    .info-title{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .meta{color:var(--muted);font-size:13px}
+
+    /* Info content area */
+    .content{margin-top:14px;line-height:1.6;color:#0b1220}
+    .content h2{margin:0 0 8px;font-size:18px}
+    .content p{margin:0 0 12px}
+    .bullet{display:flex;gap:10px;align-items:flex-start;margin-bottom:10px}
+    .bullet .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);margin-top:8px}
+
+    /* Gambar */
+    .hero-img {
+      width: 100%;
+      border-radius: var(--radius);
+      margin-bottom: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+    .inline-img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 12px 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    /* Sidebar */
+    aside .card{padding:16px}
+    .kpi{display:flex;flex-direction:column;gap:12px}
+    .kpi .k{display:flex;justify-content:space-between;align-items:center}
+    .k strong{font-size:18px}
+
+    footer{margin-top:18px;text-align:right;color:var(--muted);font-size:13px}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .grid{grid-template-columns:1fr}
+      aside{order:2}
+    }
+
+    /* Small utility */
+    .muted{color:var(--muted)}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
+    .field{background:linear-gradient(180deg,var(--glass),#fff);padding:10px;border-radius:10px;border:1px solid rgba(15,108,255,0.06)}
+
+    /* print friendly */
+    @media print{
+      body{padding:8px;background:white}
+      .btn{display:none}
+      header .logo{box-shadow:none}
+    }
+  </style>
+</head>
+<body>
+    <div class="grid">
+      <main class="card">
+        <div class="info-title">
+          <div>
+            <div class="meta">Ringkasan</div>
+            <h2 id="judul-info">Bintang 1 VS Bintang 14, sebuah kritik terhadap gerakan</h2>
+          </div>
+          <div class="meta">Diperbarui: <strong id="tanggal">—</strong></div>
+        </div>
+
+        <div class="content" id="isi-info">
+          <!-- === MULAI: GANTI ISI DI BAWAH INI DENGAN "INFO DI ATAS" === -->
+          <img src="533159118_777482488564131_4533974205789272592_n.jpg" alt="Gambar Utama" class="hero-img">
+
+          <p>“… ini orang-orang partai dan benderanya.” Kata seorang kawan di kolom komentar di akun facebook saya, Rawarap. <br><br> Komentar itu mengomentari postingan mantan Tapol Melanesia Barat, Herman Wanggai pada 1 November 2021 tentang cita-cita dari Proklamasi 14 Desember 1988 yang dibagikan lagi oleh saya. <br><br> Lebih tegas lagi, kawan yang mendukung peluncuran Green State Vision itu melanjutkan komentarnya sebagai bentuk penolakan terhadap kampanye Negara Melanesia Barat yang diproklamasikan oleh Dr. Thomas Wanggai di Stadion Mandala Jayapura, bahwa massa rakyat Papua dari Sorong sampai Samarai hanya tahu bendara Bintang Fajar sebagai bendera Negara Papua. Di luar dari itu dianggap sebagai bendera partai.  <br><br>
+
+“Kami rakyat dari Sorong sampai Samari cuma tahu bintang satu, di luar dari itu bendera partai. ” tulis Hantu Rimba. <br><br> Komentar yang mendiskreditkan salah satu organisasi gerakan perjuangan pembebasan rakyat Papua dari kolonialisme Indonesia bukanlah hal yang baru. Namun sudah menjadi narasi-narasi basi yang berulang kali dikeluarkan dari mulut-mulut orang-orang egois guna menolak ide dan konsep yang diperjuangkan Dr. Thomas Wanggai dan pengikutnya. Bahwa kemunculan negara Melanesia Barat membuat basis rakyat pejuang menjadi terpecah. <br><br>
+
+Hal di atas dapat dibenarkan, bahwa kemunculan negara Melanesia Barat beberapa hari setelah pengumuman Green State Vision oleh United Liberation Movement for West Papua (ULMWP) yang mewarisi produk Belanda tentu akan membuat basis rakyat pejuang di tanah air West Papua pecah.  <br><br>Namun bagi saya, esensi perpecahan basis rakyat bukan terletak pada dua manuver bedah warna yang lagi ramai di media sosial. Bagi saya, perpecahan itu akibat dari kurangnya pengetahuan dan pemahaman politik di basis rakyat yang terorganisir oleh organisasi gerakan perjuangan tentang sejarah politik orang Papua dalam kolonialisme Indonesia dan pemetaan gerakan perjuangan Papua merdeka.
+
+Dr. Thomas Wanggai memproklamasikan kemerdekaan Negara Republik Melanesia Barat pada 14 Desember 1988 dan dihukum penjara 20 tahun dan mati di dalam penjara demi Papua merdeka dan demi berdaulat sendiri.  <br><br>Sehingga sukar untuk diterima bila ada rakyat pejuang Papua merdeka menolak eksistensi perjuangan dari Negara Melanesia Barat hanya karena warna bendera. Sementara dalam ketidaktahuan dan kebingungan yang menganga, rakyat menerima Green State Vision hasil goyang arisan para elit di ULMWP.
+
+Agar rakyat pejuang yang hingga kini masih bertanya-tanya tentang Melanesia Barat dan merasa bingung dengan dinamika yang ada, saya akan berbagi kepada pembaca yang budiman terkait sedikit referensi yang saya tahu dari Proklamasi Negara Republik Melenasia Barat. <br><br> Tidak untuk komplotan Green State Vision, karena sebagai pendukung ULMWP dalam konteks wadah kordinatif, saya tidak mendapat sosialisasi dari para elit ULMWP tentang apa itu Green State Vision. <br><br>
+
+Sebagai pengatar dari apa yang akan saya bagikan kepada pembaca dari apa yang saya ketahui dari proklamasi yang dilakukan tepat ketika usia saya baru 1 tahun 6 hari. <br><br> Saya ingin mengawali dengan merefresh memori otak kita tentang akar persoalan Papua dalam negara kolonial Indonesia.  <br><br>Akar persoalan Papua dalam kolonialisme Indonesia seperti yang kitong tahu adalah sejarah politik orang Papua.
+Sejarah politik orang Papua dalam kolonialisme Indonesialah yang menjadi masalah paling mendasar dan menjadi kebeneran materi bagi perjuangan orang Papua. Hal itu dengan jujur disampaikan oleh Lembaga Ilmu Pengetahuan Umum Indonesia (LIPI) dalam jurnal Papua Road Map.  <br><br>Bahwa dari empat akar persoalan di Papua, persoalan sejarah politik orang Papua yang membentuk nation orang Papua merupakan salah satu akar persoalan di bumi Cenderawasih selama bergabung ke dalam negara kolonialisme Indonesia.
+
+Jadi yang menjadi akar konflik di Papua adalah sejarah politik bergabungnya Papua ke dalam kolonial Indonesia bukan warna benderah yang diperjuangkan. Sementara sejarah penjajahan bangsa lain atas bangsa Papua bukan cuma dijajah oleh kolonial Belanda saja, tapi dijajah juga oleh kolonial Indonesia. Bahkan yang sekarang ini menjajah orang Papua secara administrasi adalah kolonial Indonesia, bukan Belanda yang tidak serius bahkan tidak jujur dengan janji memerdekakan Papua. Seperti yang diungkap oleh Prof. P. J. Drooglever dalam buku Tindakan Pilihan Bebas: Orang Papua dan Penentuan Nasib Sendiri, bahwa Belanda menerima bendera negeri (Bintang Fajar) bukan berarti pengakuan kedaulatan. Kedaulatan masih tetap ada pada Belanda (Drooglever : 577). <br><br>
+
+Untuk itu kemunculan organisasi-organisasi gerakan perjuangan Papua merdeka dengan konsep pemikiran yang berbeda-beda seperti Bintang 14 tidak bisa dideskreditkan oleh satu pemikiran yang dangkal dengan mempersoalkan warna bendera. Karena jika warna bendera yang diperjuangkan yang dipersoalkan, maka hakikat dari hukum kontruksi negara, bangsa, dan bendera dari keduanya antara Bintang Fajar dan Bintang 14, harus dikaji. Sehingga kita tidak terjebak dalam fanatisme dan romantisme terhadap simbol semata. Melainkan rasa memiliki yang tersugesti dari nilai nasionalisme yang terkandung dalam simbol dan warna bendera tersebut. Bukan karena estetika dari corak bendera, apa lagi menghitung korban jiwa yang mati demi sebuah kibaran bendera. Jika jumlah nyawa yang menjadi hitungan, maka apa bedahnya dengan slogan NKRI Harga Mati yang mengorbankan nyawa dan menzolomi kebenaran demi kibaran bendera Merah Putih? Tak ada bedanya. <br><br>
+
+Maka sebagaimana yang saya sampaikan di atas bahwa saya akan berbagi kepada pembaca yang budiman terkait sedikit referensi yang saya tahu dari Proklamasi Negara Republik Melenasia Barat. <br><br> Sekalian ingin mengajak pembaca untuk mengetahui pemahaman konteks sejarah politik yang mendasari Dr. Thomas Wanggai memproklamasikan negara Republik Melanesia Barat pada tanggal 14 Desember 1988 dengan mengibarkan bendera hasil karyanya sendiri, bukan peninggalan Belanda yang menjanjikan kemerdekaan bagi Papua di tahun 1970 sesuai perjanjian Cambera tahun 1947, namun tidak dipertanggungjawabkan oleh kerajaan Ratu Yuliana hingga sekarang ini. <br><br>
+
+Corak rancangan Dr. Thomas Wanggai berwarna Hijau, Hitam, Putih, dan Merah. Corak warna yang menyimbolkan seluruh identitas dan jati diri serta karakteristik kehidupan orang Papua sebagai ras Melanesia. Berbeda dengan bendera Bintang Fajar rancangan orang Belanda yang corak warnanya meniru warna bendera Belanda. Seperti ditulis oleh Dr. Junus George Aditjondro dalam bukunya Cahaya Bintang Kejora bahwa peristiwa proklamasi 14 Desember adalah peristiwa pengibaran bendera OPM yang kesekian kali namun agak berbeda. Karena bendera yang dikibarkan bukan bendera Papua Barat rancangan seorang Belanda, melainkan bendera baru rancangan Dr. Thomas Wanggai sendiri yang dijahit istrinya Ny. Teruko Wanggai perempuan asal negeri Tirai Bambu, Jepang (Aditjondro: 2000). <br><br>
+
+Kenapa Dr. Thomas Wanggai tidak mengibarkan bendera Bintang Fajar yang ketika orang Papua dijajah Belanda diijinkan Gouverneur Nederlands-Nieuw Guinea, Platteel dikibarkan pada tanggal 1 Desember 1961 bersebelahan dengan bendera Kerajaan Belada? Tentuhnya Dr. Thom Wanggai sebagai orang Papua pertama yang mengenyam pendidikan di Jepang dan juga menjadi orang Papua pertama yang menggondol gelar Doktor pertama bagi orang Papua memiliki alasannya sendiri.
+
+Namun dalam penelusuran saya dalam membaca beberapa tulisan Herman Wanggai di terkait cita-cita dari proklamasi 14 Desember 1988. Juga sebuah artikel pendek (9 halaman) berjudul Dua Konstruksi Nasionalimse Gerekan Kemerdekaan Orang Papua yang ditulis oleh Wilson Wader yang sepenuhnya bersumber dari skripsinya yang berjudul Dibawah Dua Panji: Dinamika Nasionalisme Perjuangan Papua Merdeka di Kabupaten Manokwari, Provinsi Papua Barat serta buku Cahaya Bintang Kejora yang ditulis Dr. George Junus Aditjondro, saya berpendapat bahwa pemahaman konteks sejarah integrasi politik rakyat Papua dalam kolonialisme Indonesia menurut konseptor Negara Repulik Melanesia Barat yakni Dr. Thomas Wanggai adalah penginkaran Indonesia, Belanda, dan Amerika Serikat atas poin ke dua dari Perjanjian Roma atau Roma Egreement. <br><br>
+
+Dikatakan sebagai perjanjian Roma karna perjanjian tersebut dibuat dan ditandangani pada 30 September 1962 di kota Roma. Poin ke dua dari perjanjian tersebut berbunyi Indonesia memerintah Papua Barat selama 25 tahun terhitung aktif mulai 1 Mei 1963. Itu artinya berakhir pada tahun 1988.
+
+Selain itu bagi saya Dr. Thomas Wanggai tak bedahnya Soekarno dalam mengaktualisasikan sosialisme oleh Karl Marx yang eropa sentris menjadi sosialisme dalam praktek murni masyarakat Indonesia yang dirangkum menjadi Marhenisme. Juga sama seperti Josep Stalin dalam revolusi Rusia 1917 yang tidak menunggu hancurnya kapitalisme Tsar akibat kontradiksi kapitalisme itu sendiri sebagaimana analisis klasik dari Karl Marx sebagai bapak sosialisme. Melainkan Stalin yang lebih populer dengan nama Lenin meruntuhkan kapitalisme Tsar melalui gerak revolusi dengan alat paksa bernama partai Bolsevik.
+
+ <br><br>Dr. Thomas Wanggai melahirkan konsep baru yang sangat berbeda dari peninggalan kolonial Belanda. Juga konsep yang sangat konteks dengan kehidupan orang Papua sebagai anti tesis dari konsep yang ditinggalkan orang Belanda. Sesuatu yang seharusnya didukung, dipertahankan, dan diperjuangkan sebagai negara bagi rakyat bangsa Papua karena konsep Dr. Thomas Wanggai sangat konteks dengan Papua. <br><br> Selain itu proklamasi 14 Desember 1988 memiliki dasar hukum yang kuat karena berdasar pada Perjanjian Roma bahwa setelah 25 tahun Indonesia menjadi wahli atas Papua. Maka setelah itu (setelah 25 tahun) Indonesia berkewajiban mengembalikan Papua kepada Perserikatan Bangsa-Bangsa (PBB) untuk menentukan nasib sendiri.
+
+Dan jika murujuk pada Perjanjian Roma, maka pada tahun 1988 pemerintah Indonesia harus membawa kembali Papua ke PBB. Namun karena Indonesia, Belanda dan Amerika tidak membawa Papua ke PBB sebagaimana poin ke dua dalam Perjanjian Roma, maka Dr. Thomas Wanggai tidak sekedar menagih janji kepada Indonesia, Belanda, dan Amerika dengan cara Proklamasi Kemerdekaan Negara Republik Melanesia Barat, tetapi sebagaimana yang tersurat dalam tulisan-tulisan Herman Wanggai, pemimpin 43 orang pencari suaka politik ke Australia dengan menggunakan motor jongsong tempel 40 PK pada tahun 2006. <br><br>
+
+Bahwasannya bahwa Dr. Thomas Wanggai hendak menegaskan kepada Indonesia dan Belanda yang menilai orang Papua masih bodoh dan terbelakang sehingga belum layak merdeka dan berdaulat sendiri bahwa orang Papua sudah sangat maju dan tidak bodoh sebagaimana yang mereka stigmakan.
+
+Namun sebaliknya orang Papua melalui proklamasi 14 Desember 1988 membuktikan bahwa orang Papua sudah sangat siap dan dapat bernegara sendiri di atas tanah airnya sendiri secara internal dan eksternal dalam bernegara sebagaimana negara-negara merdeka lain di dunia. Dan itu ia tegaskan dan nyatakan dalam konsep negara Republik Melanesia Barat dengan sistem pemerintahan desentralisasi kekuasan kepada 14 Provinsi yang ibu kota negaranya terletak di wilayah Nabire, juga lengkap dengan Garis-garis Besar Haluan Negara (GBHN) dan 163 pasal.
+
+Proklamasi Negara Republik Melanesia Barat dan pengibaran bendera Bintang 14 adalah peristiwa politik yang jelas-jelas berbeda dari peristiwa politik yang terjadi pada 1 Desember 1961. <br><br> Bahkan menurut saya, perisitiwa politik 14 Desember itu jauh lebih kuat dibanding peristiwa politik lainnya yang mewarisi konsep Belanda seperti bendera Bintang Fajar. Proklamasi 14 Desember 1988 lebih kuat secara hukum internasional karena berdasarkan Perjanjian Roma. <br><br>
+Hal tersebut pula ditegaskan oleh Wilson Wader bahwa produk hukum internasional yang memberi jaminan masa depan politik orang Papua adalah Perjanjian Roma 30 September 1962. Indonesia sebagai mandataris PBB memerintah Papua selama 25 tahun untuk membangun tanah Papua dan berakhir pada tahun 1988, maka terjadi kekosongan atas status politik orang Papua. Kekosongan itu diisi oleh Dr. Thomas Wanggai dengan proklamsi Negara Republik Melanesia Barat dan mempertanggungjawabkan sikap politiknya dihadapan pengadilan kolonial Indonesia. <br><br>
+
+Artinya juga bahwa Negara Melanesia Barat lebih rasional dan ilmiah dibanding Green State Vision yang selain mewarisi produk Belanda yang tidak bertanggungjawab. Juga merupakan hasil arisan sekelompok elit yang ada di ULMWP.
+ <br><br>
+Jadi bagi saya dan yang saya ketahui, sangat tidak benar dan sangat menyesatkan bila dikatakan bahwa perjuangan Melanesia Barat yang diidentikan dengan perjuangan Bintang 14 yang dikonsepkan seorang Doktor pertama orang Papua itu dianggap sebagai bendera partai dan membingunkan serta menjadi penghambat kemerdekaan Papua. <br><br> Pandangan yang tidak benar dan menyesatkan jika terus dipelihara akan menghambat persatuan gerak bersama dalam perjuangan merebut kemerdekaan dari tangan kolonialisme Indonesia yang nota bene anti terhadap kolonial Belanda yang menjanjikan kemerdekaan palsu kepada rakyat Papua melalui manivesto politik 1 Desember 1961.</p>
+
+          <img src="https://via.placeholder.com/600x200" alt="Diagram Ilustrasi" class="inline-img">
+
+          <div class="bullet"><div class="dot"></div><div>
+            <strong>Poin Pertama</strong>
+            <p class="muted">...</p>
+          </div></div>
+
+          <div class="bullet"><div class="dot"></div><div>
+            <strong>Poin Kedua</strong>
+            <p class="muted">...</p>
+          </div></div>
+
+          <p>Catatan: jika anda menemukan artikel berharga ini, jangan lupa untuk berbagi.</p>
+          <!-- === SELESAI: GANTI ISI === -->
+        </div>
+
+        <footer>
+          <a class="btn" href="#" onclick="window.print();return false;">Cetak / Simpan sebagai PDF</a>
+        </footer>
+      </main>
+
+      <aside>
+        <div class="card">
+          <h3 style="margin-top:0">Detail & Kontak</h3>
+          <div class="kpi">
+            <div class="k"><span class="muted">Admin</span><strong id="admin">-</strong></div>
+            <div class="k"><span class="muted">Penulis</span><strong id="penulis">-</strong></div>
+            <div class="k"><span class="muted">Kategori</span><strong id="kategori">-</strong></div>
+            <div class="k"><span class="muted">Versi</span><strong id="versi">1.0</strong></div>
+          </div>
+
+          <hr style="margin:14px 0;border:none;border-top:1px solid rgba(15,108,255,0.06)">
+
+
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('tanggal').textContent = new Date().toLocaleDateString('id-ID');
+    document.getElementById('admin').textContent = 'OneAnonMan';
+    document.getElementById('penulis').textContent = 'Pilipus Robaha';
+    document.getElementById('kategori').textContent = 'Informasi Umum';
+  </script>
+</body>
+</html>
