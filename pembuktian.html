@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Halaman Info</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f5f7fb;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --accent:#0f6cff;
+      --radius:14px;
+      --glass: rgba(255,255,255,0.6);
+    }
+    *{box-sizing:border-box}
+    body{
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      margin:0; background:linear-gradient(180deg,var(--bg),#eef3ff); color:#0f172a;
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+      padding:32px;
+    }
+
+    .container{max-width:980px;margin:0 auto}
+
+    header{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+    .logo{
+      width:68px;height:68px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#6a9bff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px;box-shadow:0 6px 18px rgba(15,108,255,0.18)
+    }
+    h1{font-size:20px;margin:0}
+    p.lead{margin:4px 0 0;color:var(--muted)}
+
+    .grid{display:grid;grid-template-columns:1fr 340px;gap:20px}
+
+    /* Main card */
+    .card{background:var(--card);border-radius:var(--radius);padding:20px;box-shadow:0 8px 30px rgba(16,24,40,0.06)}
+    .info-title{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .meta{color:var(--muted);font-size:13px}
+
+    /* Info content area */
+    .content{margin-top:14px;line-height:1.6;color:#0b1220}
+    .content h2{margin:0 0 8px;font-size:18px}
+    .content p{margin:0 0 12px}
+    .bullet{display:flex;gap:10px;align-items:flex-start;margin-bottom:10px}
+    .bullet .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);margin-top:8px}
+
+    /* Gambar */
+    .hero-img {
+      width: 100%;
+      border-radius: var(--radius);
+      margin-bottom: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+    .inline-img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 12px 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    /* Sidebar */
+    aside .card{padding:16px}
+    .kpi{display:flex;flex-direction:column;gap:12px}
+    .kpi .k{display:flex;justify-content:space-between;align-items:center}
+    .k strong{font-size:18px}
+
+    footer{margin-top:18px;text-align:right;color:var(--muted);font-size:13px}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .grid{grid-template-columns:1fr}
+      aside{order:2}
+    }
+
+    /* Small utility */
+    .muted{color:var(--muted)}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
+    .field{background:linear-gradient(180deg,var(--glass),#fff);padding:10px;border-radius:10px;border:1px solid rgba(15,108,255,0.06)}
+
+    /* print friendly */
+    @media print{
+      body{padding:8px;background:white}
+      .btn{display:none}
+      header .logo{box-shadow:none}
+    }
+  </style>
+</head>
+<body>
+  <li><a href="bintang1VSbintang14.html">Bintang 1 VS bintang 14</a></li>
+    <div class="grid">
+      <main class="card">
+        <div class="info-title">
+          <div>
+            <div class="meta">Ringkasan</div>
+            <h2 id="judul-info"> UNTUK SEBUAH PEMBUKTIAN</h2>
+          </div>
+          <div class="meta">Diperbarui: <strong id="tanggal">—</strong></div>
+        </div>
+
+        <div class="content" id="isi-info">
+          <!-- === MULAI: GANTI ISI DI BAWAH INI DENGAN "INFO DI ATAS" === -->
+          <img src="526660972_122193953090300157_1932069193368034290_n.jpg" alt="Gambar Utama" class="hero-img">
+
+          <p>
+            UNTUK SEBUAH PEMBUKTIAN <br>
+(Sebuah Cerpen)<br>
+Oleh, <a href="https://www.facebook.com/pilipus.robaha">Pilipus Robaha</a><br><br>
+Hujan gerimis di Kota “baku-bawa” sejak subuh belum juga berhenti. Alam semesta masih berupaya menghapus debu-debu jalanan yang tak bersahabat dengan kesehatan manusia. Sementara ia yang bernama waktu terus bergerak tanpa menunggu hujan berhenti. Tak peduli pada manusia yang sering menunda-nunda waktu. Ia terus bergerak maju walau tak punya kaki. Itulah waktu. Selalu berharga untuk setiap menit yang dibiarkan berlalu begitu saja, entah disadari atau tidak disadari oleh manusia yang selalu berpacu dengan waktu. <br><br>
+Perpacuan pribadi dengan waktu yang sia-sia mulai disadari oleh Tumbuna, anak ke tiga dari seorang nelayan yang kehiduan remajanya hingga usia tuanya tidak pernah bersentuhan dengan organisasi politik anti integrasi Indonesia di Papua. “Tumbuna” yang dalam bahasa Pijin artinya  moyang itu mulai sadar dengan usianya yang sudah mendekati kepala empat bahwa, selama ini dirinya telah membiarkan usia mudahnya habis dalam kompromi perjuangan demi persatuan. Persatuan yang selalu dimenangkan oleh suara mayoritas, bukan kualitas. Atau waktu dimana Tumbuna berada dalam titik dilematis yang sungguh ketika diperhadapkan dengan dua panji perjuangan. Bitang Fajar yang dikenalnya sejak kecil dan  Bintang Salib yang temukan dalam perjalanan perjuangan. <br><br>
+Bintang Fajar dan Bintang Salib atau yang lebih akrab dikenal sebagai Bintang 14 adalah dua ideologi yang salah satunya harus dipilih menjadi garis politiknya sebagai hasil dialektika-kuantitas menjadi kualitas. Karena bagi Tumbuna  tidak ada pilihan ketiga bagi tawaran perubahan yang radikal dalam perjuangan ideologi diantara dua pilihan ideologi. Jika pun ada itu adalah perselingkuhan, dan Tumbuna menolak itu. 
+Untuk dapat menentukan pilihan ideologi perjuangan diantara Bintang Fajar dan Bintang Salib maka, Tumbuna berencana bertemu dengan Barend Waromi, dihari itu sesuai dengan janji yang telah dibuat Barend. Dan jika ingin memiliki waktu yang cukup untuk mencari tahu informasi tentang mengapa Thomas Wapai Wanggai mengangkat layar perjuangannya yang berbeda warnah dengan yang ditinggalkan Belanda. Sebaiknya, keputusan harus diambil pagi itu tanpa mempedulikan hujan yang masih mengguyur Kota Jayapura. Membatasi ruang gerak manusia. <br> <br>
+Bermodal jaket tebal nan lusuh, menutupi tubuhnya yang Kutilang. Kurus, tinggi, dan langsin. Tumbuna memberanikan diri menabrak sisa-sisa hujan yang jatuh dari langit, melawan kawah dingin yang turun dari gunung Pallora yang kian terancam menjadi gunung botak. Tanpa sedikitpun mengirauhkan riwat asmah yang dideritanya sejak lahir. Tumbuna mengambil langka penuh resiko.  Menentang hujan gerimis ia meluncur dari boda menuju Dok VIII menggunakan Motor Honda CB 125 warna Merah-Hitam.
+Melaju di tengah-tengah hujan gerimis, batinya terus bertanya. “Apakah benar Negara Republik Melanesia Barat yang diumumkan/diproklamasikan Thomas Wapai Wanggai di Lapangan Mandala-Tanah Tabi pada 14 Desember 1988 itu adalah sebuah pelarian.” Pertanyaan yang membuat ada kerikil keraguan dalam dirinya pada perjuangan Melanesia Barat. <br><br>
+Untuk mengetahui dengan jelas dan pasti tentang hal yang membuatnya ragu jatuh cinta pada ideologi Melanesia Barat. Tumbuna mengambil resiko menabrak sisa-sisa hujan untuk dapat mewawancari Barend Waromi yang tinggal Dok VIII-Kelurahan Imbi-Distrik Jayapura Utara. Jarak yang cukup jauh dari Boda bagi orang baru di Jayapura. Tapi tidak bagi Tumbuna dengan motivasi yang kuat. <br><br>
+Menggunakan Motor Honda CB 125 berwarna Hitam-Merah dengan kecepatan Valentino Rossi pergi ke pasar. Tumbuna menaklukan jarak Boda-Jantung Kota Port Numbay. Menaklukan tancakan Dok VII Pertamina yang mulai menjadi titik macet di sore hari. Melewati sedikit ke depan dari Kantor Kelurahan Imbi ia menikun masuk ke arah jalur keluar-masuk truk-truk tengki Pertamina- pengangkut bahan bakar.
+Sampailah Tumbuna di depan rumah yang ia tujuh, perasahan gugup dan tidak percaya diri tiba-tiba muncul mengganggunya yang telah mempersiapkan diri sejak malam untuk bisa mewawancarai Barend Waromi, sopir pribadi Thomas Wapai Wanggai, SH,.MPA,.Ph.D. Belum juga turun dari motor yang berhenti tepat di depan rumah berdinding batu-tela yang tersusun rapi, hasil buah tangan tukan bangunan yang pernah dijajah Belanda dengan roti dan susu, bukan beras raskin dan senjata seperti Indonesia. Tumbuna sudah langsung menyapa ke dalam rumah berwarnah coklat mudah. <br><br>
+
+“Syallom. Selamat pagi”<br>
+“Syallom untukmu juga. Silakan masuk”<br> terdengar  suara laki-laki dewasa dari dalam rumah membalas sekalian mempersilakan Tumbuna masuk.
+Tidak berselang lama menunggu, pintu utama yang menghubungkan teras dan ruang tamu, terbuka. Barend melangkah keluar dari dalam rumah untuk menyalami Tumbuna yang sudah masuk dan duduk di kursi rotan di teras rumah.<br>
+“Kita di sini saja atau masuk ke dalam”<br> tanya Barend. <br>
+“Di sini aman tidak!?” <br>
+“Jangankan di sini, di sana pun juga aman” <br>jawab Barend sambil jari telunjuknya diarahkan ke jalan raya yang membuat Barend dan Tumbuna kompak tertawa setengah suara secara bersamaan.
+Barend yang menyalami Tumbuna masih berdiri berhadapan langsung dengan Tumbuna yang datang dari perbatasan RI-PNG. Barend begitu bersemangat menyambut tamunya yang sempat viral karena mengkritisi influencer Bobon Santoso. Tumbuna sendiri masih berdiri mematung di hadapan Barend karena belum dipersilakan untuk duduk kembali.
+<br>“Mari silakan duduk tuan muda” <br>Seru Barend menyadari tamunya yang memiliki postur tubuh kurus tinggi itu masih berdiri mematung. Barend memilih duduk di sebelah kiri Tumbuna.
+<br>“Terimakasih Tuan.” <br>ucap Tumbuna lalu mendudukan badanya.
+<br>“Oh iya maaf tuan, hujan membuat saya terlambat dari waktu yang  telah disepakati.” <br> Lebih 1 jam Tumbuna telat dari waktu yang disepakati. Itu sungguh memalukan dan tidak bisa dibenarkan dalam disiplin perjuangan.
+ <br>“Tidak apa-apa walau seharusnya ketidakdisiplinan terhadap waktu itu tidak harus terjadi bagi seorang pejuang. Tapi untuk alasan tadi bisa diterima karena memang ada hujan.” <br> kata Barend memaafkan juga menasehati.
+Setelah basa-basi singkat, sesi wawancara yang membuat Tumbuna sampai bisa ada di rumah Barend yang sederhana itu pun dimulai. Tidak dengan pertanyaan-pertanyaan pengantar, Tumbuna langsung bertanya dengan pertanyaan bernaas yang membuat Barend sempat terlihat kaget dan sedikit tersinggung. Pertanyaan pertama Tumbuna langsung tancap gas.
+ <br>“Ada banyak orang yang berpendapat bahwa Proklamasi yang dilakukan Doktor Thomas Wanggai adalah sebuah pelarian karena kalah dari Barnabas Suebu dalam pemilihan Gubernur.”  <br>
+ <br>“Itu tidak benar.”  <br>
+ “Tapi benarkan, Dr.Thom pernah maju Gubernur!?” <br> potong Tumbuna.
+ <br>“Iya. Tapi bukan dikalahkan sama Barnabas Suebu yang kemarin mengaku menyesal telah bergabung dengan Indonesia.  <br>
+“Lalu apa yang benar?” <br>
+ <br> “Yang benar itu! Yang mulia Dr. Thom dikalahkan sama negara. Persis BTM (Benur Tomi Mano) harus dikalahkan sama Jendral Polisi MDF (Matius Derek Fakiri) melalui  KPU dan Makamah Konstitusi.” <br>
+ <br>“Bagaimana dengan pertanyaan saya tadi?”  <br>potong Tumbuna yang tidak peduli terhadap politik kolonial. Bahkan tidak sepakat bila pertarungan BTM dan MDF disamakan seperti pertarungan Suebu dan Wanggai. Terlalu jauh untuk disandingkan menurut Tumbuna yang selalu menilai perbuatan seseorang dari niatnya. Jika perbuatannya baik tapi niatnya buruk pahalanya adalah neraka.
+ <br>“Perrtanyaan yang ko tanya itu ko pu pertanyaan sendiri atau pertanyaan titipan?” <br> tanya Barend menyelidiki.
+ <br>“Itu sa punya pertanyaan sendiri. Sa ingin mendengar kebenaran dari tuan tentang motif dibalik proklamasi 14 Desember 1988, bukan ingin mendengar perbandingan ataupun pembenaran.”  <br>Jawab Tumbuna yang tahu bahwa konsep yang diproklamasikan itu memang telah direncanakan jauh-jauh hari oleh Dr. Thomas Wanggai sebelum mencalonkan diri dalam pemilihan Gubernur. Artinya ada udang dibalik batu dalam pencalonan Dr. Thomas wanggai dalam pemilihan Gubernur Papua. Udang dibalik batu itulah yang lagi dicaritahu oleh Tumbuna sampai dia bisa berulang kali meminta waktu mewawancarai Barend Waromi.
+ <br>“Yang mulia Dr. Thom maju gubernur dengan niat yang berbeda dari Barnabas Suebu. Saya ini sopir dari yang mulia Doktor Thomas Wanggai. Jadi selain beliau pu istri, mama Jepang. Saya adalah salah satu orang yang tahu niat dari tujuan beliau maju Gubernur.”  <br>kata Barend dengan nada yang tegas tapi sopan.
+ <br>“Apa yang anda ketahui tentang itu!?”  <br>Tanya Tumbuna yang tidak sabar ingin tahu undang di balik batu atau niat yang mendoron Fisluf orang Papua itu mengumumkan kemerdekaan Papua dengan bendera dan ideologi yang berbeda dari yang telah diketahui mayoritas orang Papua, Bintang Kejora.
+ <br>“Yang mulia Doktor Thom sekolah tinggi-tinggi di luar negeri bukan untuk kerja dengan pemerintah Indonesia yang pernah menahannya enam bulan di sel RTM Waena karena Papua merdeka.” <br>
+ <br>“Lantas kenapa beliau maju dalam pencalonan Gubernur Papua waktu itu kalau tidak ingin mengabdi pada Indonesia yang pernah menahannya 6 bulan di sel?”  <br>bilang Tumbuna dalam hati. Menguatkan dirinya yang suka memotong pembicaraan agar tidak memotong pembicaraan Barend.
+ <br>“Ko umur berapa tahun, pada saat Suebu pertama kali menjadi Gubernur Papua” <br> tanya Barend
+ <br>“Satu tahun” <br>
+ <br>“Lalu darimana ko tahu kalau proklamasi itu adalah sebuah pelarian dari yang mulia Dr. Thomas Wapai Wanggai?”  <br>tanya Barend ingin mencari tahu sumber pertanyaan Tumbuna yang membuatnya sedikit tersinggung.
+ <br>“Saya membaca berita jurnalisme yang ditulis di Tabloid Jubi edisi bulanan, tahun 2000” <br>
+Barend tertawa mendengar jawaban Tumbuna. Tumbuna yang tidak punya kemampuan bersabar harus berusaha bersabar dengan cara ikut tertawa walau tidak ada yang lucu menurutnya.
+ <br>“Kenapa Doktor Thomas Wanggai maju dalam bursa pencalonan Gubernur Papua, kalau bukan untuk mengabdikan gelar Ph.D-nya kepada bangsa dan negara Indonesia” <br> tanya Tumbuna setelah tertawanya yang dibuat-buat itu dihentikan. Sementara Barend masih bernostalgia dengan tertawannya sendiri.
+ Setelah berhenti tertawa dan menyeka matanya yang basah karena tertawanya sendiri. Barend langsung angkat bicara dengan nada yang tegas kepada Tumbun bahwa, ketika mereka masih ditahan bersama-sama dengan Dr. Thom di Rumah Tahanan Militer Waena. Sebelum mereka dan Dr. Thom dipenjarakan di penjara yang berbeda. Ia bertanya kenapa Dr. Thom menolak pengamanan militer OPM yang ingin mengawal dirinya waktu itu.  Dr. Thom menjawab kepada dirinya bahwa jumlah orang Papua tidak banyak untuk melawan Indonesia yang penduduknya 180 juta jiwa dan punya bantuan senjata dari Rusia. Jadi untuk berjuang melawan Indonesia! Orang Papua harus mengedepankan perjuangan tanpa kekerasan. Militer itu identik dengan kekerasan. Jika militer OPM terlibat dalam pengibaran dan proklamasi waktu itu, yang terjadi adalah kematian masal di Mandala. Agar tidak jatuh banyak korban itulah beliau maju Gubernur. Bila terpilih Dr. Thom akan ke Jakarta atas nama Gubernur Papua, menghadap Presiden Soeharto dan bilang ke Soeharto yang pernah dia ketemu langsung setelah balik dari Amerika untuk kasih merdeka Papua. Itu adalah cara yang damai juga cara itu akan membuat nama Soeharto yang merah di dunia internasional menjadi bersih dan besar di mata dunia.
+Bagi Tumbuna, apa yang dikatakan Barend itu belum cukup meyakinkan dan merubah pendapatnya dan orang-orang yang tidak sejalan dengan gerakan Dr. Thomas Wanggai. Bahwa apa yang dilakukan penerima beasiswa UDF ke Jepang itu bukanlan pelarian tapi menagih janji Indonesia Belanda, dan Amerika berdasarkan perjanjian Roma. <br> <br>
+  <br> <br>“Maaf Tuan! Menurut saya yang ingin tahu tujuan dari proklamasi itu bahwa yang tadi tuan katakan itu hanyalah pembenaran, bukan kebenaran?” <br> <br>
+“Terserah! Mau percaya atau tidak itu terserah ko karena kebenaran tidak bisa dipaksakan juga. Jika dipaksakan jadinya pembenaran seperti yang ko bilang tadi. Dan kami tak butuh validasi dari ko dan dunia tentang proklamasi itu” <br> <br> ketus Barend dengan nada setengah tinggi, menunjukan rahut wajah sangat dongkol. <br>
+ <br>“Tapi proklamasi itu butuh pengakuan kan!?” <br> balas Tumbuna sambil merubah cara duduknya yang santai menjadi posisi duduk yang sigap. 
+ <br>“Iya, itu benar. Tapi pengakuan tidak selalu penerimaan. Penolakan pun itu adalah pengakuan karena dasar penolakan itu selalu didasari oleh fakta bahwa yang ditolak itu benar-benar ada. Dan proklamasi itu benar-benar ada dan adanya proklamasi itu mengancam kedaulatan Indonesia di Papua dan juga ilusi tentang 1 Desember. Makanya proklamasi 14 Desember ditolak dengan berbagai macam celaan, baik yang datang dari musuh maupun kawan.” <br> <br>
+ “Dan kenapa proklamasi yang benar-benar ada itu harus ditolak dengan celaan seperti itu?” <br> tanya Barend kepada Tumbuna sambil mencondongkan badannya ke arah Tumbuna.
+ <br>“Kenapa, itu pertanyaan saya untuk anda yang mulia, tuan Barend?” <br> balas Tumbuna melanjutkan jeda pada pertanyaan balik Barend, kenapa pengumuman kemerdekaan yang Tumbuna sendiri yakini benar-benar ada sebagai fakta sejarah politik Papua merdeka itu harus ditolak orang Papua bahkan Tumbuna sendiri.
+ <br>“Karena orang Papua takut ilusi yang selama ini dibangun bahwa, 1 Desember adalah hari kemerdekaan Papua yang dikasih oleh Belanda itu hancur. Itu adalah kebenaran dibalik celaan itu”  <br>jawab Barend yang sontak membuat Tumbuna ingat pada perkataan Friedrich Nietzsche, Penulis Thu Spokee Zarathustra. Bahwa orang sering takut dengan kebenaran karena kebenaran itu bisa menghancurkan ilusi yang mereka bangun selama ini, dan mereka lebih nyaman dengan kebohongan atau kepalsuan yang memberikan kenyamanan sementara.
+Tumbuna diam tak memberi pertanyaan. Membiarkan Barend bicara tanpa ditanya. Ada harapan dalam diamnya. Semoga telinganya yang tidak ditindik dan tidak bermasalah itu mendengar kebenaran yang lain dari setiap kata yang mengalir lancar dari mulut Barend. Kata-kata yang bukan pembenaran kenapa Doktor Thomas Wapai Wanggai memproklamasikan kemerdekaan Negara Republik Melanesia Barat. Tapi kata-kata yang menjelaskan niat dari peristiwa yang memiliki dampak besar dalam ketakutan runtuhnya integrasi yang dipaksakan dengan kebohongan dan darah itu hancur.
+ <br> <br>“Satu hal lagi yang perlu ko tahu. Kalau yang mulia Doktor Thom mau cari jabatan di republik ini! Ketika beliau pulang dari Amerika dengan gelar Ph.D dan diminta menjadi Asisten Menteri Dalam Negeri oleh Soeharto, dan juga ditawari sebagai Kepala Bapenas, beliau tidak akan menolak itu, namun menerimanya. Itu fakta yang tidak bisa kalian temukan dari orang Papua bergelar tinggi yang hari ini ada. Semua rakus gula-gula Indonesia.”  <br>ujar Barend dengan suara setengah nada tapi terdengar jelas dan tegas ditelinga Tumbuna.
+ Tumbuna yang memutuskan lebih baik diam sesekali menganggukan kepalanya membenarkan perkataan Barend. Terutama pada pernyataan Barend bahwa, rata-rata orang asli Papua  bergelar Master hingga Profesor dan Doktor sekarang ini senang menjilat nanah-nanah busuk yang terdapat diluka kekuasaan Indonesia di Papua dengan menyebutkan beberapa nama. Dua diantara nama-nama yang disebut dan terekam baik di pendengaran Tumbuna adalah Natalis Pigay dan Yan Permenas Mandenas.
+Bagi Barend tidak semua elit  Papua pantas di panggil sebagai tuan yang mulia sebagaimana dirinya memanggil Dr. Thom Wanggai dengan sebutan tuan yang mulia. Barend memiliki standar untuk sebutan seperti itu. Bagi Barend, orang yang layak dipanggil seperti itu adalah mereka yang memiliki gelar pendidikan tinggi tapi tidak menjilat nanah-nanah busuk kekuasan. Juga tidak tunduk pada kebodohan kekuasaan. <br> <br> Orang Papua seperti itu baru dia temukan pada diri Thomas Wanggai yang pernah menjadi konsultan United Nation Depertement of Public Information (UNDPI) perwakilan Papua. Dr. Thom menolak pembangunan Papua ala transmigrasi yang dilakukan Seoharto dan mengusulkan pembangunan 25 tahun yang berkelanjutan. Salah satunya adalah membangun dari Kampung ke Kota yang kemudian hari diadopsi Barnabas Suebu.
+ <br>“Ada pertanyaan lain lagi selain itu?" <br> Tanya Barend membuka kebisiuan yang lagi dipeluk Tumbuna dalam diam yang memiliki arti tersendiri baginya. Diam untuk membiarkan jiwanya yang berbicara menjawab pertanyaan egonya.  <br>“Mengapa Dr. Thomas Wapai Wanggai mengibarkan layar perjuangan Papua merdeka dengan cara berpamitan dari jalan perjuangan yang ditinggalkan Belanda.” <br>
+“Iya” <br>
+ “Silakan ditanyakan” kata Barend” <br>
+ <br>“Waktu masih sama-sama di RTM Waena. Selain bertanya kepada Dr. Thom, apakah beliau ada ucapkan sesuatu tentang proklamasi itu?” <br>
+ <br>“Sel beliau tidak pernah dibuka jadi kitong yang harus ke sana dan bicara dengan dia dari luar jeruji. Kecuali hari minggu”  <br>kata Barend, kemudian mengisahkan momen minggu terakhir mereka bersama Dr. Thom.
+ Kembali Tumbuna dipeluk dalam diam seperti seorang petapa. Diam penuh konsentrasi mendengar Barend bicara soal minggu pagi yang terakhir bagi kebersamaan mereka dengan pemimpin mereka. Thomas Wapai Wanggai, SH,.MPA,.Ph.D.
+ <br>“Bapa Doktor bilang sama kitong sebelum kitong dipenjarakan di penjarah yang terpisah dari beliau. Kami dibawah ke Lapas Abe kemudian dipindahkan lagi ke Lapas Kalisosok, Surabaya-Jawa Timur. Sedangkan bapa Doktor sendiri dari RTM Waena langsung dibawah ke Lapas Cipinang-Jakarta tanpa sepengetahuan dan persetujuan dari keluarga. Bapa Doktor bilang bahwa dirinya sekolah tinggi-tinggi itu untuk membuktikan kepada Indonesia, Belanda dan Amerika.” <br> <br>
+“Ia ingin membuktikan apa?”  <br>potong Tumbuna dalam diamnya yang mematung. <br>
+  <br>“Yang mulia bapa Dr. Thom ingin buktikan kepada dunia bahwa, kitong orang Papua tidak bodoh. Kitong juga bisa pimpin kitong pu diri sendiri. Kitong bisa bikin kitong pu bendera dan negara sendiri. Dan cara memberitahukan itu kepada mereka di muka umum dan di muka hukum adalah mengumumkan kemerdekaan dengan bendera sendiri dan mempertanggungjawabkan itu di meja hijau. Dan dia akan mempertanggungjawabkan itu dengan menjalani hukuman yang telah diputuskan. 20 tahun penjara.” <br> <br>
+“Jadi itu tujuan dari proklamasi 14 Desember 1988” <br>
+ “Iya” <br> Jawab Barend yang berkeyakinan kuat bahwa Melanesia Barat adalah jalan tol kemerdekaan sejati bagi orang Papua.
+ Waktu terus bergerak maju. Tak terasa matahari yang terpenjara dalam kumpulan-kumpulan awan hitam pekat sejak pagi di langit Numbay, sudah mulai membagi Bumi-Tabi menjadi dua. Sudah jam 12 siang. Namun matahari di jam 12 siang itu belum mampu menghilangkan hawa dingin yang masih terasa di teras rumah Barend. Dua gelas air teh manis yang masih mengeluarkan uap panasnya dan harumnya vanila dari teh yang disediahkan oleh istri Barend belum diminum. 
+Tidak saja untuk menghargai tuan rumah tapi memang rasa dingin dibalik jaket setengah basah yang tidak Tumbuna lepas dari badannya harus diusir segera mungkin sebelum sesak nafas menyerangnya. Teh panas rasa vanila yang baru lima menit ditaruh dihadapannya menjadi korban.
+ <br> <br>“Terimakasih buat tehnya. Rasa teh yang belum pernah saya minum sebelumnya. Enak sekali.” <br> kata Tumbuna berterimakasih kepada tangan perempuan berhati baja yang setia bersabar dalam penantian selama empat tahun, menunggu suami yang ia cintai bebas dari penjara. Itulah satu alasan dari ribuan alasan yang membuat pria berhidung mancung yang diwawancarai Tumbuna dari pagi hingga siang hari itu, begitu mencintai istrinya dan berjanji tetap setia pada istrinya hingga ajal menjemput sebagaimana kesetiannya pada ideologi Thomas Wanggai.
+ <br>“Cuman segelas teh tanpa teman”  <br>balas Barend yang pembawaanya adalah seorang yang pendiam namun ketika berbicara tentang cinta dan kasih sayang serta kepedulian Doktor Thomas Wanggai kepada orang Papua dan tanah Papua, membuat buluh badan setiap orang yang mendengarnya pasti merinding bahkan bisa menangis. Seperti yang dialami Tumbuna.
+Tumbuna takkuasa menahan haru membayangkan betapa kuatnya cinta dan sayangnya Dr. Thomas Wanggai kepada orang Papua dan tanah Papua sampai ia mampu menolak segala jabatan yang menjanjikan kenyamanan dan kemewaan yang ditawarkan pemerintah kolonial Indonesia kepadanya. Seperti Yesus menolak godaan dan rayuan Iblis di padang gurun lalu mendeklarasikan kerajaan-Nya sendiri. Kerajaan Sorga di Bumi. Dan satu hal lagi yang membuat Tumbuna merasa apa yang dikatakan Barend bukanlah pembenaran tapi itu adalah udang dibalik batu yang membuat Dr. Thomas Wanggai memproklamasikan kemerdekaan Negara Republik Melanesia Barat. Hal itu adalah penolakan yang lakukan Dr. Thom kepada istrinya, Mimi Teruko, perempuan asal Jepang yang begitu dicintainya.
+Mimi Teruko mengajak suaminya ke Jepang dan mengajar di Jepang, pada saat mengetahui bahwa suaminya menolak tinggal di Amerika dan bekerja sebagai pengajar di Universitas Florida. Ketika mendapati kenyataan itu, Mimi Teruko menutup rapat mulutnya dalam perjalanan pulang mereka dari Amerika ke Papua sebagai protes kecil yang tak berarti apa-apa di hadapan suaminya yang ia cintai.
+ <br> <br>“Mama Jepang rela kase tinggal  negerinya yang makmur dan ikut dengan suaminya, bapa Doktor ke Papua yang terjajah tutup mulut bukan karena egonya. Namun karena dia tahu bahwa bapa Doktor akan memproklamasikan kemerdekaan negara Papua. Negara yang sistem pemerintahannya menggunakan sistem desentralisasi, sesuai disertase doktoralnya” <br> <br> kata Barend membuyarkan lamunan Tumbuna
+ “Dan yang haru ko ingat selalu bahwa proklamasi itu dilakukan untuk membuktikan kepada dunia bahwa orang Papua tidak seperti yang dunia stigmakan. Bodoh dan terbelakang sehingga belum bisa bernegara sendiri” lanjut Barend yang membuat Tumbuna benar-benar siuman dari diamnya untuk memberi konsentrasi pada pendengarannya saja.
+ <br> <br>“Sungguh itu tidak terpikirkan oleh saya bahwa itu tujuan mendasar Dr. Thom memproklamasikan kemerdekaan Negara Republik Melanesia Barat.
+ <br>“Dan itu benar-benar dilakukan. Dr. Thom”  <br>lanjut Tumbuna yang diiyakan Barend dengan anggukan kepalanya. <br> <br>
+“Yang mulia Dr. Thom mimiliki kemampuan berbahasa Belanda, Inggris, Indonesia, dan Jepang serta bahasa ibunya sendiri benar-benar melakukan itu di Lapangan Mandala-Tanah Tabi guna membuktikan kepada dunia. Bahwa orang Papua tidak bodoh seperti yang distigmakan oleh Belanda, Indonesia dan Amerika yang membuat Perjanjian New York 15 Agustus 1962 dan Perjanjian Roma 30 September 1962 tanpa melibatkan para elit Papua waktu itu hanya karena stigma. Orang Papua masih bodoh dan terbelakang.” <br> <br> tegas Barend.
+Suara panggilan beribadah umat muslim terdengar sayup ditelinga memanggil mereka yang bercelana jingkrak untuk beribadah. Tumbuna berpamitan pulang dengan hati yang puas. Udang dibalik batu proklamasi 14 Desember 1988 telah dia ketahui. Keputusan telah dibuat. Kerikil yang meragukan Tumbuna pada niat Dr. Thom Wanggi telah disapuhnya. Tidak ada alasan lagi untuk Tumbuna menolak ideologi dan perjuangan Melanesia Barat. Ia akan melanjutkan perjuangan Dr. Thomas Wanggai apa pun celaan dan penolakan yang akan dialaminya. Ia akan menanggung celaan dan penolakan itu sebagai harga yang harus dibayar untuk sebuah pembukitan bahwa niat politik Dr. Thomas Wanggai sebagai anak bangsa Papua lebih mulia dan tulus dari politik Belanda dan Indonesia.[i]
+[i] Cerpen ini ditulis berdasarkan kisah nyata bapak Barend Waromi yang adalah mantan Tapol Melanesia Barat (1988), yang penulis wawancarai pada tanggal 12 Mei 2025.
+
+          </p>
+
+          <img src="https://via.placeholder.com/600x200" alt="Diagram Ilustrasi" class="inline-img">
+
+          <div class="bullet"><div class="dot"></div><div>
+            <strong>Poin Pertama</strong>
+            <p class="muted">...</p>
+          </div></div>
+
+          <div class="bullet"><div class="dot"></div><div>
+            <strong>Poin Kedua</strong>
+            <p class="muted">...</p>
+          </div></div>
+
+          <p>Catatan: jika anda menemukan artikel berharga ini, jangan lupa untuk berbagi.</p>
+          <!-- === SELESAI: GANTI ISI === -->
+        </div>
+
+        <footer>
+          <a class="btn" href="#" onclick="window.print();return false;">Cetak / Simpan sebagai PDF</a>
+        </footer>
+      </main>
+
+      <aside>
+        <div class="card">
+          <h3 style="margin-top:0">Detail & Kontak</h3>
+          <div class="kpi">
+            <div class="k"><span class="muted">Admin</span><strong id="admin">-</strong></div>
+            <div class="k"><span class="muted">Penulis</span><strong id="penulis">-</strong></div>
+            <div class="k"><span class="muted">Kategori</span><strong id="kategori">-</strong></div>
+            <div class="k"><span class="muted">Versi</span><strong id="versi">1.0</strong></div>
+          </div>
+
+          <hr style="margin:14px 0;border:none;border-top:1px solid rgba(15,108,255,0.06)">
+
+
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('tanggal').textContent = new Date().toLocaleDateString('id-ID');
+    document.getElementById('admin').textContent = 'OneAnonMan';
+    document.getElementById('penulis').textContent = 'Pilipus Robaha';
+    document.getElementById('kategori').textContent = 'Informasi Umum';
+  </script>
+</body>
+</html>
