@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Halaman Info</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f5f7fb;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --accent:#0f6cff;
+      --radius:14px;
+      --glass: rgba(255,255,255,0.6);
+    }
+    *{box-sizing:border-box}
+    body{
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      margin:0; background:linear-gradient(180deg,var(--bg),#eef3ff); color:#0f172a;
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+      padding:32px;
+    }
+
+    .container{max-width:980px;margin:0 auto}
+
+    header{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+    .logo{
+      width:68px;height:68px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#6a9bff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px;box-shadow:0 6px 18px rgba(15,108,255,0.18)
+    }
+    h1{font-size:20px;margin:0}
+    p.lead{margin:4px 0 0;color:var(--muted)}
+
+    .grid{display:grid;grid-template-columns:1fr 340px;gap:20px}
+
+    /* Main card */
+    .card{background:var(--card);border-radius:var(--radius);padding:20px;box-shadow:0 8px 30px rgba(16,24,40,0.06)}
+    .info-title{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .meta{color:var(--muted);font-size:13px}
+
+    /* Info content area */
+    .content{margin-top:14px;line-height:1.6;color:#0b1220}
+    .content h2{margin:0 0 8px;font-size:18px}
+    .content p{margin:0 0 12px}
+    .bullet{display:flex;gap:10px;align-items:flex-start;margin-bottom:10px}
+    .bullet .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);margin-top:8px}
+
+    /* Gambar */
+    .hero-img {
+      width: 100%;
+      border-radius: var(--radius);
+      margin-bottom: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+    .inline-img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 12px 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    /* Sidebar */
+    aside .card{padding:16px}
+    .kpi{display:flex;flex-direction:column;gap:12px}
+    .kpi .k{display:flex;justify-content:space-between;align-items:center}
+    .k strong{font-size:18px}
+
+    footer{margin-top:18px;text-align:right;color:var(--muted);font-size:13px}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .grid{grid-template-columns:1fr}
+      aside{order:2}
+    }
+
+    /* Small utility */
+    .muted{color:var(--muted)}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
+    .field{background:linear-gradient(180deg,var(--glass),#fff);padding:10px;border-radius:10px;border:1px solid rgba(15,108,255,0.06)}
+
+    /* print friendly */
+    @media print{
+      body{padding:8px;background:white}
+      .btn{display:none}
+      header .logo{box-shadow:none}
+    }
+  </style>
+</head>
+<body>
+    <div class="grid">
+      <main class="card">
+        <div class="info-title">
+          <div>
+            <div class="meta">Ringkasan</div>
+            <h2 id="judul-info">PETISI: HAK KEDAULATAN EKONOMI DAN POLITIK IRIAN BARAT. </h2>
+          </div>
+          <div class="meta">Diperbarui: <strong id="tanggal">—</strong></div>
+        </div>
+
+        <div class="content" id="isi-info">
+          <!-- === MULAI: GANTI ISI DI BAWAH INI DENGAN "INFO DI ATAS" === -->
+          <img src="https://scontent.fupg5-1.fna.fbcdn.net/v/t39.30808-6/482084495_666287309186411_7618322414470390240_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEdP0tH8OGc3eaWn78r4v5hbw_vsn4e7hpvD--yfh7uGlmxng0OOXoCT8bEvL7vKnoKSJ4ZckYATR-DmEO812kD&_nc_ohc=ErlwVtDWnq0Q7kNvwH0ZWMN&_nc_oc=Adm8d_A1hGq0hlSgUBWrFBmLHt9yPqIRL6AD-u5sLb3VTFyWGJexWvJCJTNhDsHuEwM&_nc_zt=23&_nc_ht=scontent.fupg5-1.fna&_nc_gid=eGmxEM5iFBgBLfpeAwBLuw&oh=00_AfbZkAGgPX-gtfAVwug6czZeSeEfLGS0cFZG3k05kB6lGQ&oe=68D99919" alt="Gambar Utama" class="hero-img">
+
+          <p>
+           Kepada yang terhormat: <br>
+• Bank Dunia <br>
+• Perserikatan Bangsa-Bangsa <br>
+• Masyarakat Dunia <br>
+• Pemerintah Negara-negara Demokratis di seluruh dunia. <br>
+Salam damai dari Tanah Perjanjian di Ujung Bumi, Negeri Matahari Terbit, Irian Barat (Papua Barat). <br>
+Sejarah merupakan bagian yang tidak terpisahkan dari kehidupan suatu bangsa. <br>
+ Saya, cucu tertua dari Pendeta Stefanus Samberi, pemegang kartu Perserikatan Bangsa-Bangsa (PBB) nomor 206 sejak tahun 1962, sebagai wakil Negara Irian Barat dan Rakyat Irian Barat, dengan ini menyatakan bahwa: <br><br>
+
+1. Irian Barat adalah negara merdeka, yang diratifikasi atau diadopsi melalui perjanjian internasional, yaitu Perjanjian New York pada tanggal 15 Agustus 1962, yang dirancang di Markas Besar Perserikatan Bangsa-Bangsa dan ditandatangani oleh pemerintah masing-masing pihak yang terikat—Subandrio (Wakil Republik Indonesia) dan J.H. Van Roijen & C.W.A. Schurmann (Wakil Kerajaan Belanda). Perjanjian ini didaftarkan oleh Sekretaris Jenderal PBB berdasarkan Pasal 102 Piagam PBB ketika Majelis Umum PBB mengadopsi Resolusi No. 1752 pada tanggal 21 September 1962, yang menetapkan Irian Barat sebagai Wilayah Tanpa Pemerintahan Sendiri dan menempatkannya di bawah Komite Khusus Dekolonisasi (C-24).  <br><br>
+
+2. Pengalihan kendali administratif dari Kerajaan Belanda kepada United Nations Temporary Executive Authority (UNTEA) terjadi pada tanggal 1 Oktober 1962. UNTEA selanjutnya menyerahkan administrasi kepada Republik Indonesia pada tanggal 1 Mei 1963, sesuai dengan Perjanjian New York (15 Agustus 1962). Perjanjian ini mengamanatkan agar Indonesia dan Belanda menyiapkan tata kelola Irian Barat di bidang pendidikan, kesehatan, sosial budaya, dan ekonomi selama 25 tahun (1 Mei 1963 – 1 Mei 1988), sebagaimana ditetapkan dalam Perjanjian Roma pada tanggal 30 September 1962, yang ditandatangani oleh Pendeta Stefanus Samberi, yang menghasilkan Resolusi Khusus PBB (Dokumen Rahasia Internasional). <br><br>
+
+3. Kontrak Karya Pertama antara Irian Barat dan PT. Freeport McMoRan ditandatangani oleh Pendeta Stefanus Samberi pada tanggal 7 April 1967, untuk jangka waktu 30 tahun (1967–1997).  Kontrak ini merupakan Surat Berharga Negara (SBN) Irian Barat yang dijadikan agunan bagi Bank Sentral Irian Barat, Dana Moneter Internasional (IMF), dan Bank Dunia untuk membiayai pembangunan Irian Barat dan menerbitkan mata uang resminya (IB). Kontrak ini tidak memuat tanda tangan pejabat Indonesia dan berujung pada Resolusi Khusus PBB (Dokumen Rahasia Internasional). <br><br>
+
+4. Penentuan Pendapat Rakyat (PEPERA) yang diselenggarakan pada tanggal 14 Juli – 2 Agustus 1969 menghasilkan Resolusi Majelis Umum PBB No. 2504 pada tanggal 19 November 1969, yang mencatat bahwa pemerintah Indonesia dalam melaksanakan rencana pembangunan nasionalnya, memberikan perhatian khusus terhadap kemajuan Irian Barat, dengan dana pembangunan khusus untuk Irian Barat yang diberikan melalui Bank Pembangunan Asia, badan-badan PBB, atau sarana lain kepada Indonesia untuk pembangunan ekonomi dan sosial Irian Barat. <br><br>
+
+5. Pada masa penjajahan Belanda, Kediaman Gubernur di Irian Barat disebut Istana Gubernur, yang terletak di Jayapura sebagai pusat pemerintahan.  Setelah Belanda meninggalkan Irian Barat, namanya diubah menjadi Gedung Negara. <br><br>
+
+6. Ibu kota Irian Barat dan Bank Sentralnya berkedudukan di Jayapura. Mata uang resmi Irian Barat adalah IB, yang nilainya jauh lebih tinggi daripada Rupiah Indonesia, dengan nilai tukar 1 IB = 18.900 Rupiah. <br><br>
+
+7. Pemegang saham mayoritas PT. Freeport McMoRan adalah Pendeta Stefanus Samberi, yang bertindak sebagai wakil utama Negara dan Rakyat Irian Barat. <br><br>
+
+8. PT. Freeport McMoRan telah mengeksploitasi sumber daya alam Irian Barat, termasuk emas, molibdenum, paladium, uranium, tembaga, perak, dan lainnya, dengan keuntungan yang dibagikan sesuai dengan kepemilikan saham. <br><br>
+
+9. Pendeta Stefanus Samberi dibunuh oleh Republik Indonesia pada tanggal 13 April 1983. Sejarah perjuangannya dihapus dan dimanipulasi, yang menyebabkan Rakyat Irian Barat kehilangan kedaulatan, hak ekonomi, dan hak politik mereka, dan mereka terus menjadi korban hingga hari ini.  <br><br>
+
+10. Republik Indonesia sama sekali gagal memenuhi kewajibannya selama 25 tahun (1 Mei 1963 – 1 Mei 1988) untuk mengembangkan sektor pendidikan, sosial, budaya, dan ekonomi Irian Barat, serta membentuk pemerintahan yang dipimpin oleh rakyat Irian Barat sendiri. <br><br>
+
+11. Republik Indonesia telah melampaui jangka waktu kontraktualnya untuk pembangunan Irian Barat. Sejak 1 Mei 1988, Indonesia telah menjadi negara kolonial, yang terus-menerus menyembunyikan status Irian Barat sebagai negara merdeka. <br><br>
+
+12. Pada tahun 1991, Indonesia—bertindak sebagai kekuatan kolonial—menandatangani Kontrak Karya selama 30 tahun dengan PT. Freeport McMoRan (1991 – 2021), yang kemudian diperpanjang selama 20 tahun lagi hingga 2041. <br><br>
+
+13. Setelah pembunuhan Pendeta Stefanus Samberi pada tanggal 13 April 1983, saham mayoritas PT.  Freeport McMoRan milik Negara dan Rakyat Irian Barat dirampas oleh PT. Freeport McMoRan dan kemudian dijual kepada Negara Republik Indonesia pada tahun 2018 tanpa persetujuan dari ahli waris pemegang saham mayoritas yang sah. <br><br>
+
+14. Dana pembangunan Irian Barat sejak tahun 1960-an hingga saat ini telah dijarah oleh pemerintah Indonesia. <br><br>
+
+15. Hutan Irian Barat sebagai paru-paru dunia telah hancur. Jutaan hektar telah dibuka untuk persawahan dan perkebunan kelapa sawit, tanah adat telah dirampas, kayu telah dijual, dan keuntungan telah dikuasai oleh elit bisnis yang bekerja sama dengan pemerintah Indonesia. <br><br>
+
+16. Setiap kali Rakyat Irian Barat menuntut hak kedaulatan, ekonomi, dan politik mereka, Indonesia mengerahkan pasukan militer dan polisinya, yang mengakibatkan pelanggaran hak asasi manusia yang berat terus berlanjut. <br><br>
+
+Kami menuntut:<br>
+1. PBB membentuk Otoritas Eksekutif Sementara PBB untuk mengalihkan pemerintahan dari Indonesia ke Negara Irian Barat.   <br>
+2. Komisioner Tinggi PBB untuk Hak Asasi Manusia menyelidiki pembunuhan Pendeta Stefanus Samberi dan pelanggaran hak asasi manusia di Irian Barat. <br>
+3. Bank Dunia memisahkan Bank Indonesia dan Rupiah dari Irian Barat (IB) serta mengembalikan mata uang Irian Barat (IB) dan Bank Sentral Irian Barat. <br>
+4. Audit menyeluruh atas dana pembangunan Irian Barat yang dikuasai Indonesia. <br>
+5. PBB menghentikan otonomi khusus dan semua program strategis nasional Indonesia di Irian Barat. <br>
+6. Republik Indonesia dan PT. Freeport McMoRan mengembalikan saham mayoritas milik Irian Barat. <br>
+7. PBB menghentikan Indonesia dari mengeksploitasi sumber daya alam Irian Barat. <br><br>
+Kami menyerukan kepada masyarakat internasional untuk mendukung perjuangan Rakyat Irian Barat dalam merebut kembali hak kedaulatan, ekonomi, dan politik mereka. <br><br>
+Ditandatangani <br>
+Yakobus D. Samberi
+(Jacky Papua) <br>
+Cucu tertua Pendeta Stefanus Samberi, pemegang Kartu PBB nomor 206 sebagai wakil Negara Irian Barat dan Rakyat Irian Barat.
+</p>
+
+          <img src="https://via.placeholder.com/600x200" alt="Diagram Ilustrasi" class="inline-img">
+
+          <div class="bullet"><div class="dot"></div><div>
+            <strong>Poin Pertama</strong>
+            <p class="muted">...</p>
+          </div></div>
+
+          <div class="bullet"><div class="dot"></div><div>
+            <strong>Poin Kedua</strong>
+            <p class="muted">...</p>
+          </div></div>
+
+          <p>Catatan: jika anda menemukan artikel berharga ini, jangan lupa untuk berbagi.</p>
+          <!-- === SELESAI: GANTI ISI === -->
+        </div>
+
+        <footer>
+          <a class="btn" href="#" onclick="window.print();return false;">Cetak / Simpan sebagai PDF</a>
+        </footer>
+      </main>
+
+      <aside>
+        <div class="card">
+          <h3 style="margin-top:0">Detail & Kontak</h3>
+          <div class="kpi">
+            <div class="k"><span class="muted">Admin</span><strong id="admin">-</strong></div>
+            <div class="k"><span class="muted">Penulis</span> <a href="https://www.facebook.com/jacky.papua.2025"><strong id="penulis">-</strong></a></div>
+            <div class="k"><span class="muted">Kategori</span><strong id="kategori">-</strong></div>
+            <div class="k"><span class="muted">Versi</span><strong id="versi">1.0</strong></div>
+          </div>
+
+          <hr style="margin:14px 0;border:none;border-top:1px solid rgba(15,108,255,0.06)">
+
+
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('tanggal').textContent = new Date().toLocaleDateString('id-ID');
+    document.getElementById('admin').textContent = 'OneAnonMan';
+    document.getElementById('penulis').textContent = 'Yakobus D. Samberi';
+    document.getElementById('kategori').textContent = 'Sejarah Politik';
+  </script>
+</body>
+</html>
