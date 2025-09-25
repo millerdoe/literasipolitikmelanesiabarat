@@ -352,12 +352,13 @@ footer {
     let visits = localStorage.getItem("visits");
     visits = visits ? parseInt(visits) + 1 : 1;
     localStorage.setItem("visits", visits);
-      "Kunjungan Anda: " + visits;
+        document.getElementById("counter").textContent = "Kunjungan Anda: " + visits;
   
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
+
 
 
 
