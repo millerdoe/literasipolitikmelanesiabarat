@@ -345,14 +345,20 @@ footer {
     </section>
 
     <footer>
-      © <span id="year"></span> Portal Melanesia
+      © <span id="year"></span> Portal Melanesia <p id='x'></p> 
     </footer>
   </div>
-  <script>
+    <script>
+    let visits = localStorage.getItem("visits");
+    visits = visits ? parseInt(visits) + 1 : 1;
+    localStorage.setItem("visits", visits);
+      "Kunjungan Anda: " + visits;
+  
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
+
 
 
 
