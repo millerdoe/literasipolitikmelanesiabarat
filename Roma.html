@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Halaman Info</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f5f7fb;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --accent:#0f6cff;
+      --radius:14px;
+      --glass: rgba(255,255,255,0.6);
+    }
+    *{box-sizing:border-box}
+    body{
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      margin:0; background:linear-gradient(180deg,var(--bg),#eef3ff); color:#0f172a;
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+      padding:32px;
+    }
+
+    .container{max-width:980px;margin:0 auto}
+
+    header{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+    .logo{
+      width:68px;height:68px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#6a9bff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px;box-shadow:0 6px 18px rgba(15,108,255,0.18)
+    }
+    h1{font-size:20px;margin:0}
+    p.lead{margin:4px 0 0;color:var(--muted)}
+
+    .grid{display:grid;grid-template-columns:1fr 340px;gap:20px}
+
+    /* Main card */
+    .card{background:var(--card);border-radius:var(--radius);padding:20px;box-shadow:0 8px 30px rgba(16,24,40,0.06)}
+    .info-title{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .meta{color:var(--muted);font-size:13px}
+
+    /* Info content area */
+    .content{margin-top:14px;line-height:1.6;color:#0b1220}
+    .content h2{margin:0 0 8px;font-size:18px}
+    .content p{margin:0 0 12px}
+    .bullet{display:flex;gap:10px;align-items:flex-start;margin-bottom:10px}
+    .bullet .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);margin-top:8px}
+
+    /* Gambar */
+    .hero-img {
+      width: 100%;
+      border-radius: var(--radius);
+      margin-bottom: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+    .inline-img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 12px 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    /* Sidebar */
+    aside .card{padding:16px}
+    .kpi{display:flex;flex-direction:column;gap:12px}
+    .kpi .k{display:flex;justify-content:space-between;align-items:center}
+    .k strong{font-size:18px}
+
+    footer{margin-top:18px;text-align:right;color:var(--muted);font-size:13px}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .grid{grid-template-columns:1fr}
+      aside{order:2}
+    }
+
+    /* Small utility */
+    .muted{color:var(--muted)}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
+    .field{background:linear-gradient(180deg,var(--glass),#fff);padding:10px;border-radius:10px;border:1px solid rgba(15,108,255,0.06)}
+
+    /* print friendly */
+    @media print{
+      body{padding:8px;background:white}
+      .btn{display:none}
+      header .logo{box-shadow:none}
+    }
+  </style>
+</head>
+<body>
+    <div class="grid">
+      <main class="card">
+        <div class="info-title">
+          <div>
+            <div class="meta">Ringkasan</div>
+            <h2 id="judul-info">PERJANJIAN ROMA 30 SEPTEMBER 1962</h2>
+          </div>
+          <div class="meta">Diperbarui: <strong id="tanggal">—</strong></div>
+        </div>
+
+        <div class="content" id="isi-info">
+          <!-- === MULAI: GANTI ISI DI BAWAH INI DENGAN "INFO DI ATAS" === -->
+          <img src="https://scontent.fupg5-1.fna.fbcdn.net/v/t39.30808-6/555979415_10214530949063211_519039686062003592_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=rf2KKX8zGAcQ7kNvwEECmlc&_nc_oc=AdnIjOn9pC_OY0ltUFOgtQMm2qrTwpqugYZSRiy8IwArWv3BKbsuaskSEhMTHUhwtQg&_nc_zt=23&_nc_ht=scontent.fupg5-1.fna&_nc_gid=mhBqMjmtAfG4koWapUdOEw&oh=00_AfZUOXrJES5K3vOY6-0QvkYNQuF6LDPOcYYS3Ytkd7Jeyg&oe=68DDC252" alt="Gambar Utama" class="hero-img">
+
+          <p>
+Dalam lorong waktu yang berliku dan penuh liku, cerita perjuangan Papua Barat merdeka terukir dengan tinta kejujuran dan keberanian yang tak terpadamkan. Kebenaran yang terkandung dalam Perjanjian Roma 30 September 1962 bukan sekadar dokumen kertas, melainkan nadi kehidupan yang mengalir dalam jiwa rakyat Melanesia Barat, sebuah bangsa yang sejak lama menanti pengakuan atas haknya untuk menentukan nasib sendiri. <br><br>
+Ketika pertama kali saya menyelami dan belajar soal Perjanjian Roma itu, bukan hanya sebuah pelajaran tentang sejarah atau hukum internasional yang saya temukan, melainkan percikan api harapan yang menyala melalui debat sengit antara Dr. Thom Wainggai dan pemerintah Indonesia pada 1989. Sebuah perdebatan yang melampaui sekadar urusan politik biasa, karena di balik setiap kalimat dan argumen hukum terpatri sebuah kebenaran hakiki: bahwa Indonesia hanya memegang mandat sementara atas tanah dan rakyat Papua Barat sejak 1 Mei 1963. Masa itu berakhir pada 1 Mei 1988, sesuai batas waktu yang termaktub dalam Perjanjian Roma. <br><br>
+Kebenaran ini membuka tabir bahwa Papua Barat bukanlah bagian abadi dari Indonesia, melainkan sebuah bangsa yang memiliki jalan sendiri untuk merangkai sejarahnya. Dari sini lahir keberanian Dr. Thom Wainggai untuk secara tegas memproklamasikan kemerdekaan Negara Republik Melanesia Barat pada 14 Desember 1988, sebuah seruan bagi dunia bahwa waktu kedaulatan Indonesia telah berakhir, dan kini saatnya bagi bangsa Melanesia Barat untuk berdiri tegak sebagai entitas berdaulat. <br><br>
+Namun, perjalanan pengakuan atas kemerdekaan itu tak pernah mudah. Pengorbanan besar harus dibayar mahal. Pada Maret 1996, tragedi menyesakkan melanda ketika Dr. Wainggai kehilangan nyawanya di tahanan Indonesia. Kepergiannya bukan sekadar hilangnya sosok pemimpin, tapi sebuah luka mendalam yang membakar jiwa rakyat Papua, dan menguatkan tekad kami yang masih hidup untuk terus mengusung perjuangan ini. Di Jayapura, riuhnya lautan manusia yang mengantar kepergian jasadnya menjadi saksi bisu dari rasa kehilangan dan semangat yang tak padam. <br><br>
+Dalam pelarian dan pengasingan, kami menemukan pijakan baru di Madang, Papua New Guinea, tempat saya bertemu dengan Bapa Moses Weror, sosok bijak yang mengingatkan bahwa sejarah tidak boleh hilang dalam kabut waktu. Di balik kata-katanya yang penuh makna, terpatri keyakinan bahwa Perjanjian Roma adalah fondasi kokoh perjuangan Papua Barat. “Kebenaran itu harus terus disuarakan,” katanya dengan suara berat namun sarat keyakinan, menegaskan bahwa Papua Barat adalah bangsa yang memiliki hak fundamental untuk menentukan masa depannya, terlepas dari klaim manapun. <br><br>
+Kembali ke tanah kelahiran setelah pengalaman berharga itu, saya bertemu dengan almarhum Bapa Herman Wayoi, salah satu ikon sejarah perjuangan bangsa Melanesia. Dalam setiap kata yang ia ucapkan setelah Kongres Papua tahun 2000, saya menangkap getar jiwa yang memanggil kami untuk menjadi mata dan suara bagi kebenaran yang abadi. “Roma adalah saksi. Tapi kita harus menjadi suara dari saksi itu,” katanya tegas, mengingatkan bahwa nilai-nilai perjuangan harus terus dihidupkan dalam setiap langkah dan suara kami. <br><br>
+Tiga pilar sejarah ini menjadi benteng kebenaran yang melindungi dan menerangi perjuangan Papua Barat: Dr. Thom Wainggai, sang proklamator dan ahli hukum yang membuka tabir kedaulatan Indonesia yang sifatnya sementara; Bapa Moses Weror, pelaku dan penjaga sejarah yang memastikan perlawanan ini tak terhapuskan; serta Bapa Herman Wayoi, penyalur suara-suara lama yang merevitalisasi semangat rakyat melalui setiap kongres dan gerakan. <br><br>
+Cerita perjuangan Papua Barat bukan sekadar lembaran sejarah yang dibaca, melainkan warisan hidup yang berdenyut dalam setiap detak jantung kami dari luka yang mendalam, pengorbanan yang berharga, pengasingan yang menyakitkan, dan keyakinan yang tak tergoyahkan. Dalam setiap helaan napas, dalam setiap langkah kaki, terkandung satu pesan abadi: Papua Barat adalah bangsa yang merdeka, sebuah entitas yang meniscayakan pengakuan dunia atas haknya untuk bebas dan berdaulat. Dan kisah ini akan terus kami suarakan, hingga keadilan dan kemerdekaan sejati adalah milik kami yang hakiki. <br><br>
+Perjuangan Berlanjut ke Amerika dan kami lanjut menulis Dokumen Washington Solution berkaitan Perjanjian Roma dimaksud, 30 September 1962 silam. <br><br>
+          </p>
+
+          <img src="https://scontent.fupg5-1.fna.fbcdn.net/v/t15.5256-10/534562405_2785416448319645_2814771444905693865_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=111&ccb=1-7&_nc_sid=b5ba86&_nc_ohc=ylLRfvsWscQQ7kNvwG24FC1&_nc_oc=AdlDUuoqx7dMt0nYhAHCG_pHtl6BZuVlSEXdVLQ1CoPizx2q46FPZblROie-gdVtuGc&_nc_zt=23&_nc_ht=scontent.fupg5-1.fna&_nc_gid=K3peD4DgPLT1d4Qv97Dhgw&oh=00_AfbsPbNGZC-tdgpxmwmY19TLoJxtqB_prqyLVjtQQW-7TA&oe=68DDCE3A" alt="Diagram Ilustrasi" class="inline-img">
+
+          <div class="bullet"><div class="dot"></div><div>
+            <strong>Poin Pertama</strong>
+            <p class="muted">Perjanjian ROMA memberikan kontrak administrasi papua selama 25 tahun (1 mei 1963 - 1 mei 1988)</p>
+          </div></div>
+
+          <div class="bullet"><div class="dot"></div><div>
+            <strong>Poin Kedua</strong>
+            <p class="muted">proklamasi 14 desember 1988 untuk menjawab perjanjian ROMA 30 September 1962</p>
+          </div></div>
+
+          <p>Catatan: jika anda menemukan artikel berharga ini, jangan lupa untuk berbagi.</p>
+          <!-- === SELESAI: GANTI ISI === -->
+        </div>
+
+        <footer>
+          <a class="btn" href="#" onclick="window.print();return false;">Cetak / Simpan sebagai PDF</a>
+        </footer>
+      </main>
+
+      <aside>
+        <div class="card">
+          <h3 style="margin-top:0">Detail & Kontak</h3>
+          <div class="kpi">
+            <div class="k"><span class="muted">Admin</span><strong id="admin">-</strong></div>
+            <div class="k"><span class="muted">Penulis</span> <a href="https://www.facebook.com/herman.wainggai"><strong id="penulis">-</strong></a></div>
+            <div class="k"><span class="muted">Kategori</span><strong id="kategori">-</strong></div>
+            <div class="k"><span class="muted">Versi</span><strong id="versi">1.0</strong></div>
+          </div>
+
+          <hr style="margin:14px 0;border:none;border-top:1px solid rgba(15,108,255,0.06)">
+
+
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('tanggal').textContent = new Date().toLocaleDateString('id-ID');
+    document.getElementById('admin').textContent = 'OneAnonMan';
+    document.getElementById('penulis').textContent = 'Herman wanggai';
+    document.getElementById('kategori').textContent = 'Sejarah Politik';
+  </script>
+</body>
+</html>
